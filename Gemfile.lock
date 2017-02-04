@@ -66,6 +66,8 @@ GEM
     ffi (1.9.17)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    haml (4.0.7)
+      tilt
     http (2.2.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -192,6 +194,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
+  haml
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
