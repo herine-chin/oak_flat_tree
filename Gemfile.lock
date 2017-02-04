@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/herine-chin/cloud-client-ruby.git
+  revision: 043f04689d5e247ddddd2790d9a9705d1794bbf0
+  specs:
+    weeblycloud (1.0.0)
+      http
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -184,8 +191,6 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    weeblycloud (1.0.0)
-      http
 
 PLATFORMS
   ruby
@@ -207,7 +212,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
-  weeblycloud
+  weeblycloud!
 
 RUBY VERSION
    ruby 2.4.0p0

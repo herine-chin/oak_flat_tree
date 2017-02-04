@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
-gem 'weeblycloud'
+gem 'weeblycloud', git: 'https://github.com/herine-chin/cloud-client-ruby.git', require: true
 gem 'haml', require: true
 
 # Use Capistrano for deployment
