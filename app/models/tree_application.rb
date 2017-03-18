@@ -1,0 +1,2 @@
+class TreeApplication < ApplicationRecord
+end

@@ -1,2 +1,43 @@
-.tree-form
-  FORM GOES HERE
+.tree-application
+  = form_for @tree_application, html: { class: 'form-horizontal' } do |f|
+    .form-group
+      = f.label :first_name, class: 'col-sm-1 control-label'
+      = f.text_field :first_name, class: 'col-sm-1'
+      = f.label :last_name, class: 'col-sm-1 control-label'
+      = f.text_field :last_name, class: 'col-sm-1'
+    .form-group
+      = f.label :address_1, class: 'col-sm-1 control-label'
+      = f.text_field :address_1, class: 'col-sm-3'
+    .form-group
+      = f.label :address_2, class: 'col-sm-1 control-label'
+      = f.text_field :address_2, class: 'col-sm-3'
+    .form-group
+      = f.label :city, class: 'col-sm-1 control-label'
+      = f.text_field :city, class: 'col-sm-1', value: 'Oakland'
+      = f.label :state, class: 'col-sm-1 control-label'
+      = f.text_field :state, class: 'col-sm-1', value: 'CA'
+    .form-group
+      = f.label :zip_code, class: 'col-sm-1 control-label'
+      = f.text_field :zip_code, class: 'col-sm-1'
+      = f.label :country, class: 'col-sm-1 control-label'
+      = f.text_field :country, class: 'col-sm-1'
+    .form-group
+      = f.label :email, class: 'col-sm-1 control-label'
+      = f.email_field :email, class: 'col-sm-3'
+    .form-group
+      = f.label :phone_number, class: 'col-sm-1 control-label'
+      = f.telephone_field :phone_number, class: 'col-sm-1'
+      = f.label :rental_property, class: 'col-sm-1 control-label'
+      = f.select :rental_property, [true, false], include_blank: true, class: 'col-sm-1'
+    .form-group
+      = f.label :inquiry_date, class: 'col-sm-1 control-label'
+      = f.date_field :inquiry_date, class: 'col-sm-3'
+    .form-group
+      = f.label :referral_source, class: 'col-sm-1 control-label'
+      = f.text_field :referral_source, class: 'col-sm-3'
+    .form-group
+      = f.label :fee_amount, class: 'col-sm-1 control-label'
+      = f.number_field :fee_amount, class: 'col-sm-1'
+      = f.label :water_agreement, class: 'col-sm-1 control-label'
+      = f.select :water_agreement, [true, false], include_blank: true, class: 'col-sm-1'
+    = f.submit 'Save Application', class: 'col-sm-4'
