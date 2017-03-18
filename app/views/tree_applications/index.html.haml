@@ -1,1 +1,8 @@
 = link_to 'New Tree Application', new_tree_application_path, class: 'btn btn-primary'
+
+- @tree_applications.each do |app|
+  .tree-application-row
+    = app.id
+    = app.first_name
+    = app.last_name
+    = link_to 'App', tree_application_path(app.id), class: 'btn btn-primary btn-xs'

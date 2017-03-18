@@ -2,6 +2,7 @@ class TreeApplicationsController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    @tree_applications = TreeApplication.all
   end
 
   def new
